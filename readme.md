@@ -8,6 +8,14 @@
 [![Total Downloads](https://poser.pugx.org/barryvdh/laravel-dompdf/d/total.png)](https://packagist.org/packages/barryvdh/laravel-dompdf)
 [![Fruitcake](https://img.shields.io/badge/Powered%20By-Fruitcake-b2bc35.svg)](https://fruitcake.nl/)
 
+## Pitfalls
+
+There are a few pitfalls with the original dompdf library which you should be aware of.
+
+* Rendering tables with large amount of rows is very slow
+* Using html template with a lot of images will make the render times very slow
+* Failure to load external CSS file will make the render times very slow
+
 ## Installation
 
 ### Laravel
